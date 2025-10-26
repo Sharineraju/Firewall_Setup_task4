@@ -29,13 +29,9 @@ The following steps detail the creation, testing, and cleanup of the firewall ru
 
 The Windows Defender Firewall with Advanced Security console was opened to provide a baseline for the current Inbound Rules configuration.
 
-![Initial Firewall Console](Screenshots/1_Initial_Console.png)
-
 ### Step 2: Blocking Insecure Traffic (TCP Port 23)
 
 A new custom **Inbound Rule** was created with the action set to **Block** for **TCP Port 23** (Telnet). This rule ensures that any attempt to establish a Telnet connection to the machine is rejected at the firewall level.
-
-![Telnet Block Rule Details](Screenshots/2_Blocked_Port_23_Rule.png)
 
 ### Step 3: Verifying the Block Rule
 
